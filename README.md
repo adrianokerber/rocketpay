@@ -5,6 +5,9 @@ This project was created using the following command
 ```bash
 mix phx.new rocketpay --no-webpack --no-html
 ```
+The project divide its layers in folders referencing the project's name, for example under ./lib:
+- rocketpay (Domain layer)
+- rocketpay_web (Application/Host layer)
 
 ## Restore project on local machine
 In order to restore the project run: `mix deps.get`
@@ -32,7 +35,7 @@ Access the running service on page http://localhost:4000/dashboard/
 mix test
 ```
 
-## Denpendencies
+## Dependencies
 [Elixir](https://elixir-lang.org/install.html) 1.11.3 (compiled with Erlang/OTP 21)
 
 [Phoenix Framework](https://www.phoenixframework.org/):
