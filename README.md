@@ -30,6 +30,9 @@ The command above will run the Phoenix server.
 
 Access the running service on page http://localhost:4000/dashboard/
 
+## Running migrations
+With the DB up and running use `mix ecto.migrate` to run the migrations.
+
 ## Running unit tests
 ```
 mix test
