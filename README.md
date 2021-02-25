@@ -33,6 +33,17 @@ Access the running service on page http://localhost:4000/dashboard/
 ## Running migrations
 With the DB up and running use `mix ecto.migrate` to run the migrations.
 
+Creating a new migration to be used with a new schema and changeset:
+```
+mix ecto.gen.migration migration_name
+# Example
+mix ecto.gen.migration create_users_table
+```
+After a new migration is created and defined we should run
+```
+mix ecto.migrate
+```
+
 ## Running unit tests
 ```
 mix test
