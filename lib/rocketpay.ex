@@ -7,6 +7,8 @@ defmodule Rocketpay do
   if it comes from the database, an external API or others.
   """
   alias Rocketpay.Users.Create, as: UserCreate
+  alias Rocketpay.Accounts.Deposit
 
   defdelegate create_user(params), to: UserCreate, as: :call
+  defdelegate deposit(params), to: Deposit, as: :call
 end
