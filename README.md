@@ -56,3 +56,10 @@ mix test
 ```bash
 mix archive.install hex phx_new 1.5.7
 ```
+
+### Roadmap
+
+We have planned some improvements:
+
+* [ ] Fix Deposit and Withdraw actions to display updated account after operation. Currently the account shows the old status before the operation.
+* [ ] Fix Operation module error message that displays "Invalid deposit value!" but should deal with deposit and withdraw messages
