@@ -30,7 +30,11 @@ The command above will run the Phoenix server.
 
 Access the running service on page http://localhost:4000/dashboard/
 
-## Running migrations
+If you want to execute your modules on terminal run `iex -S mix`, this will open an iex with all your modules loaded. User `recompile` each time you change your modules.
+
+NOTE: Phoenix server does not require to be stopped after each change since we have hot reload enabled, you just need to restart the server if you change dependencies or any other compilation configuration.
+
+### Running migrations
 With the DB up and running use `mix ecto.migrate` to run the migrations.
 
 Creating a new migration to be used with a new schema and changeset:
