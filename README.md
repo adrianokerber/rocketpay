@@ -60,6 +60,14 @@ mix coveralls.html
 # The line above will create a html on ./cover/excoverall.html that will show the relevant code to test
 ```
 
+## Debugging
+For debug abuse of `IO.inspect()` it won't change your operations and will print on the shell you values
+```
+# Example:
+response = run_something()
+IO.inspect(response)
+```
+
 ## Dependencies
 [Elixir](https://elixir-lang.org/install.html) 1.11.3 (compiled with Erlang/OTP 21)
 
@@ -72,5 +80,5 @@ mix archive.install hex phx_new 1.5.7
 
 We have planned some improvements:
 
-* [ ] Fix Deposit and Withdraw actions to display updated account after operation. Currently the account shows the old status before the operation.
+* [x] Fix Deposit and Withdraw actions to display updated account after operation. Currently the account shows the old status before the operation.
 * [ ] Fix Operation module error message that displays "Invalid deposit value!" but should deal with deposit and withdraw messages
