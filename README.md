@@ -49,6 +49,8 @@ mix ecto.migrate
 ```
 
 ## Running unit tests
+We has unit tests and integration tests that use DB in sandbox mode, preventing test data from being stored on our DB of tests
+
 ```
 # Run tests
 mix test
