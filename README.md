@@ -50,7 +50,14 @@ mix ecto.migrate
 
 ## Running unit tests
 ```
+# Run tests
 mix test
+
+# Run tests with coverage statistics
+mix test --cover
+# Or use
+mix coveralls.html
+# The line above will create a html on ./cover/excoverall.html that will show the relevant code to test
 ```
 
 ## Dependencies
